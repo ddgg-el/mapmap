@@ -1,7 +1,7 @@
 MapMap
 ====== 
 
-:warning: **Unfortunately, we are no longer able to maintain nor provide support for MapMap anymore. The code is provided "as is".**
+:warning: **JUST A REVISION**
 
 MapMap is a free video mapping software.
 
@@ -24,7 +24,7 @@ Build status
 
 Github Actions: ![Build on macOS](https://github.com/mapmapteam/mapmap/workflows/Build%20on%20macOS/badge.svg) ![Build on Ubuntu](https://github.com/mapmapteam/mapmap/workflows/Build%20on%20Ubuntu/badge.svg) ![Build on Windows](https://github.com/mapmapteam/mapmap/workflows/Build%20on%20Windows/badge.svg)
 
-Travis CI: [![Build on Linux and macOS](https://travis-ci.org/mapmapteam/mapmap.svg?branch=develop)](https://travis-ci.org/mapmapteam/mapmap) [![Build on Windows](https://ci.appveyor.com/api/projects/status/5b2ww0n8m8s9p55c?svg=true)](https://ci.appveyor.com/project/baydam/mapmap)
+<!-- Travis CI: [![Build on Linux and macOS](https://travis-ci.org/mapmapteam/mapmap.svg?branch=develop)](https://travis-ci.org/mapmapteam/mapmap) [![Build on Windows](https://ci.appveyor.com/api/projects/status/5b2ww0n8m8s9p55c?svg=true)](https://ci.appveyor.com/project/baydam/mapmap) -->
 
 Ackowledgements
 ---------------
@@ -41,7 +41,7 @@ Build and installation
 To build and install it, see the INSTALL file provided with the source code.
 
 To use this software on Mac OS X:
-* Install GStreamer using http://gstreamer.freedesktop.org/data/pkg/osx/1.2.4.1/gstreamer-1.0-1.2.4.1-universal.pkg : you should customize the installation and choose to install all components.
+* Install GStreamer using https://gstreamer.freedesktop.org/data/pkg/osx/1.22.8/gstreamer-1.0-1.22.8-universal.pkg : you should customize the installation and choose to install all components.
 
 To use this software on Gnu/Linux with window managers other than Unity, 
 make sure that this package is NOT installed: appmenu-qt5
