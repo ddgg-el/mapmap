@@ -1,3 +1,5 @@
 #!/bin/bash
+BASEDIR=$(dirname "$0")
+echo $BASEDIR
 # doxygen
-doxygen Doxyfile
+doxygen "$BASEDIR/../docs/Doxyfile"

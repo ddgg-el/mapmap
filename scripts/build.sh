@@ -7,7 +7,7 @@ cd $(dirname $0)
 cd ..
 
 #Verify this version matches folder name.
-qtversion=5.10.1
+qtversion=5.15.10_1
 
 do_create_dmg() {
     if [ -f DMGVERSION.txt ]
@@ -25,7 +25,7 @@ do_create_dmg() {
     mkdir -p $DMGDIR
     cp -R MapMap.app ${DMGDIR}
     cp README.md ${DMGDIR}/README.txt
-    cp NEWS ${DMGDIR}/NEWS.txt
+    # cp NEWS ${DMGDIR}/NEWS.txt
     cp resources/macOS/Get\ GStreamer\ macOS.url ${DMGDIR}/
     hdiutil create \
         -volname ${DMGDIR} \
@@ -38,7 +38,7 @@ do_create_dmg() {
 
 do_fix_qt_plugins_in_app() {
     appdir=./MapMap.app
-    qtdir=~/Qt/${qtversion}/clang_64
+    qtdir=//opt/homebrew/Cellar/qt@5/${qtversion}
     # install libqcocoa library
     mkdir -p $appdir/Contents/PlugIns/platforms
     cp $qtdir/plugins/platforms/libqcocoa.dylib $appdir/Contents/PlugIns/platforms
@@ -66,9 +66,9 @@ if [[ $unamestr == "Darwin" ]]; then
     #export QMAKE_CFLAGS_PPC_64
     #export QMAKESPEC=macx-g++
     #export QMAKESPEC=macx-xcode
-    qtbindir=~/Qt/${qtversion}/clang_64/bin/
+    qtbindir=/opt/homebrew/Cellar/qt@5/5.15.10_1/bin/
     PATH=$PATH:${qtbindir}
-    gstreamer="GStreamer.framework/Versions/1.0/lib/GStreamer"
+    gstreamer="/Library/Frameworks/GStreamer.framework/Versions/1.0/lib/"
     app="MapMap.app"
 
     # XXX

@@ -36,8 +36,9 @@ macx {
   DEFINES += MACOSX
   QMAKE_CXXFLAGS += -D__MACOSX_CORE__
   QMAKE_CXXFLAGS += -stdlib=libc++
-  INCLUDEPATH += /Library/Frameworks/GStreamer.framework/Versions/1.0/Headers
-  LIBS += -F /Library/Frameworks/ -framework GStreamer
+  INCLUDEPATH += "/Library/Frameworks/GStreamer.framework/Versions/1.0/Headers"
+  LIBS += -L/Library/Frameworks/GStreamer.framework/Versions/Current/lib
+  LIBS += -F "/Library/Frameworks/" -framework GStreamer
   LIBS += -framework OpenGL -framework GLUT
   # With Xcode Tools > 1.5, to reduce the size of your binary even more:
   # LIBS += -dead_strip

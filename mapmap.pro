@@ -72,7 +72,6 @@ QMAKE_EXTRA_TARGETS += tarball
 # Show various messages
 message("MapMap version: $${VERSION}")
 # message("Qt version: $$[QT_VERSION]")
-# message("LIBS: $${LIBS}")
 # message("PKGCONFIG: $${PKGCONFIG}")
 # message("The project contains the following files: $${SOURCES} $${HEADERS}}")
 # message("To create a tarball, run `make tarball`")

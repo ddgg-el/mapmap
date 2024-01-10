@@ -792,7 +792,8 @@ void VideoImpl::unlockMutex()
 
 bool VideoImpl::waitForNextBits(int timeout, const uchar** bits)
 {
-  QTime time;
+  QElapsedTimer time;
+//  QTime time;
   time.start();
   while (time.elapsed() < timeout)
   {

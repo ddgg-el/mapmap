@@ -144,7 +144,8 @@ public:
   {
     // Deep copy.
     vertices.resize(vertices_.size());
-    qCopy(vertices_.begin(), vertices_.end(), vertices.begin());
+    std::copy(vertices_.begin(), vertices_.end(),vertices.begin());
+//    qCopy(vertices_.begin(), vertices_.end(), vertices.begin());
   }
 
   // Returns true iff vertex index is considered a major (external) control point.

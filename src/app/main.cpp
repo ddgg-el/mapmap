@@ -252,7 +252,6 @@ int main(int argc, char *argv[])
     win->startFullScreen();
   }
 #endif
-
   // Start app.
   int result = app.exec();
 

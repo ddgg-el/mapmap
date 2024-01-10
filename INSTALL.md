@@ -91,7 +91,6 @@ NOTE: This has been tested on OS X 10.11 (El Capitan).
 Install tools and dependencies:
 
 1) Install the Apple Developer Tools
-  - You need to register with a credit card in the Apple Store in order to download it (no need to pay, but Apple requires your credit card number).
 2) Install Qt5
   - You can get the open source version from http://www.qt.io/download-open-source/
   - Run the installer and choose the default location (which should be ~/Qt).
@@ -99,10 +98,7 @@ Install tools and dependencies:
 3) Install liblo
   - Use the following guide: http://macappstore.org/liblo/
   - OR compile from the tar.gz - it should install it to /usr/local
-4) Install the GStreamer framework. You need the runtime and devel packages to be installed:
-  - https://gstreamer.freedesktop.org/data/pkg/osx/1.6.0/gstreamer-1.0-1.6.0-x86_64.pkg
-  - https://gstreamer.freedesktop.org/data/pkg/osx/1.6.0/gstreamer-1.0-devel-1.6.0-x86_64.pkg
-  - http://gstreamer.freedesktop.org/data/pkg/osx/1.6.0/gstreamer-1.0-1.6.0-x86_64-packages.dmg
+4) Install the GStreamer framework. You need the runtime and devel packages to be installed: https://gstreamer.freedesktop.org/download/
 
 Do this:
 

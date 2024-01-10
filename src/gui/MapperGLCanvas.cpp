@@ -170,7 +170,8 @@ void MapperGLCanvas::applyZoomToView()
   // Re-bound zoom (for consistency).
   qreal zoomFactor = getZoomFactor();
   // Resets the view transformation matrix
-  resetMatrix();
+  resetTransform();
+//  resetMatrix();
   // Scale the current view
   scale(zoomFactor, zoomFactor);
   // And update
@@ -819,7 +820,7 @@ void MapperGLCanvas::fitShapeToView()
     setSceneRect(scene()->itemsBoundingRect());
     centerOn(this->scene()->itemsBoundingRect().center());
     // Get the horizontal scaling factor
-    _scalingFactor = matrix().m11();
+    _scalingFactor = transform().m11();
 
     // Adapt shape
     _shapeIsAdapted = true;
